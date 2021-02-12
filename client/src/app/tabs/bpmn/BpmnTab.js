@@ -8,7 +8,7 @@
  * except in compliance with the MIT License.
  */
 
-import BpmnEditor from './BpmnEditor';
+import PlatformBpmnEditor from './PlatformBpmnEditor';
 import XMLEditor from '../xml';
 
 import { createTab } from '../EditorTab';
@@ -17,7 +17,7 @@ import { createTab } from '../EditorTab';
 const BpmnTab = createTab('BpmnTab', [
   {
     type: 'bpmn',
-    editor: BpmnEditor,
+    editor: PlatformBpmnEditor,
     defaultName: 'Diagram'
   },
   {

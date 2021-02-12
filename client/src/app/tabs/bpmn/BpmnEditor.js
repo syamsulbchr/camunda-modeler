@@ -29,14 +29,10 @@ import {
 } from '../../../util';
 
 import {
-  WithCache,
-  WithCachedState,
   CachedComponent
 } from '../../cached';
 
 import PropertiesContainer from '../PropertiesContainer';
-
-import CamundaBpmnModeler from './modeler';
 
 import { active as isInputActive } from '../../../util/dom/isInput';
 
@@ -50,24 +46,9 @@ import css from './BpmnEditor.less';
 
 import generateImage from '../../util/generateImage';
 
-import applyDefaultTemplates from './modeler/features/apply-default-templates/applyDefaultTemplates';
-
-import {
-  findUsages as findNamespaceUsages,
-  replaceUsages as replaceNamespaceUsages
-} from '../util/namespace';
-
 import configureModeler from './util/configure';
 
 import Metadata from '../../../util/Metadata';
-
-
-const NAMESPACE_URL_ACTIVITI = 'http://activiti.org/bpmn';
-
-const NAMESPACE_CAMUNDA = {
-  uri: 'http://camunda.org/schema/1.0/bpmn',
-  prefix: 'camunda'
-};
 
 const EXPORT_AS = [ 'png', 'jpeg', 'svg' ];
 
@@ -134,13 +115,6 @@ export class BpmnEditor extends CachedComponent {
 
     propertiesPanel.attachTo(this.propertiesPanelRef.current);
 
-
-    try {
-      await this.loadTemplates();
-    } catch (error) {
-      this.handleError({ error });
-    }
-
     this.checkImport();
   }
 
@@ -186,33 +160,9 @@ export class BpmnEditor extends CachedComponent {
       modeler[fn](event, this.handleChanged);
     });
 
-    modeler[fn]('elementTemplates.errors', this.handleElementTemplateErrors);
-
     modeler[fn]('error', 1500, this.handleError);
 
     modeler[fn]('minimap.toggle', this.handleMinimapToggle);
-  }
-
-  async loadTemplates() {
-    const { getConfig } = this.props;
-
-    const modeler = this.getModeler();
-
-    const templatesLoader = modeler.get('elementTemplatesLoader');
-
-    const templates = await getConfig('bpmn.elementTemplates');
-
-    templatesLoader.setTemplates(templates);
-
-    const propertiesPanel = modeler.get('propertiesPanel', false);
-
-    if (propertiesPanel) {
-      const currentElement = propertiesPanel._current && propertiesPanel._current.element;
-
-      if (currentElement) {
-        propertiesPanel.update(currentElement);
-      }
-    }
   }
 
   undo = () => {
@@ -241,16 +191,6 @@ export class BpmnEditor extends CachedComponent {
     });
   }
 
-  handleElementTemplateErrors = (event) => {
-    const {
-      errors
-    } = event;
-
-    errors.forEach(error => {
-      this.handleError({ error });
-    });
-  }
-
   handleError = (event) => {
     const {
       error
@@ -263,46 +203,11 @@ export class BpmnEditor extends CachedComponent {
     onError(error);
   }
 
-  handleNamespace = async (xml) => {
-    const used = findNamespaceUsages(xml, NAMESPACE_URL_ACTIVITI);
-
-    if (!used) {
-      return xml;
-    }
-
-    const shouldConvert = await this.shouldConvert();
-
-    if (!shouldConvert) {
-      return xml;
-    }
-
-    const {
-      onContentUpdated
-    } = this.props;
-
-    const convertedXML = await replaceNamespaceUsages(xml, used, NAMESPACE_CAMUNDA);
-
-    onContentUpdated(convertedXML);
-
-    return convertedXML;
-  }
-
-  async shouldConvert() {
-    const { button } = await this.props.onAction('show-dialog', getNamespaceDialog());
-
-    return button === 'yes';
-  }
-
   handleImport = (error, warnings) => {
     const {
-      isNew,
       onImport,
       xml
     } = this.props;
-
-    let {
-      defaultTemplatesApplied
-    } = this.getCached();
 
     const modeler = this.getModeler();
 
@@ -312,19 +217,11 @@ export class BpmnEditor extends CachedComponent {
 
     if (error) {
       this.setCached({
-        defaultTemplatesApplied: false,
         lastXML: null
       });
     } else {
 
-      if (isNew && !defaultTemplatesApplied) {
-        modeler.invoke(applyDefaultTemplates);
-
-        defaultTemplatesApplied = true;
-      }
-
       this.setCached({
-        defaultTemplatesApplied,
         lastXML: xml,
         stackIdx
       });
@@ -464,13 +361,10 @@ export class BpmnEditor extends CachedComponent {
 
     const modeler = this.getModeler();
 
-    const importedXML = await this.handleNamespace(xml);
-
-
     let error = null, warnings = null;
     try {
 
-      const result = await modeler.importXML(importedXML);
+      const result = await modeler.importXML(xml);
       warnings = result.warnings;
     } catch (err) {
 
@@ -484,7 +378,7 @@ export class BpmnEditor extends CachedComponent {
   }
 
   /**
-   * @returns {CamundaBpmnModeler}
+   * @returns {BpmnModeler}
    */
   getModeler() {
     const {
@@ -607,10 +501,6 @@ export class BpmnEditor extends CachedComponent {
       context = {
         value: 'fit-viewport'
       };
-    }
-
-    if (action === 'elementTemplates.reload') {
-      return this.loadTemplates();
     }
 
     // TODO(nikku): handle all editor actions
@@ -789,7 +679,8 @@ export class BpmnEditor extends CachedComponent {
     const {
       getPlugins,
       onAction,
-      onError
+      onError,
+      additionalProps
     } = props;
 
     // notify interested parties that modeler will be configured
@@ -820,7 +711,7 @@ export class BpmnEditor extends CachedComponent {
       );
     }
 
-    const modeler = new CamundaBpmnModeler({
+    const modeler = new this.Modeler({
       ...options,
       position: 'absolute'
     });
@@ -843,16 +734,15 @@ export class BpmnEditor extends CachedComponent {
       },
       lastXML: null,
       modeler,
-      namespaceDialogShown: false,
       stackIdx,
-      templatesLoaded: false
+      ...additionalProps
     };
   }
 
 }
 
 
-export default WithCache(WithCachedState(BpmnEditor));
+export default BpmnEditor;
 
 class Color extends Component {
   render() {
@@ -879,23 +769,6 @@ class Color extends Component {
 }
 
 // helpers //////////
-
-function getNamespaceDialog() {
-  return {
-    type: 'warning',
-    title: 'Deprecated <activiti> namespace detected',
-    buttons: [
-      { id: 'cancel', label: 'Cancel' },
-      { id: 'yes', label: 'Yes' }
-    ],
-    message: 'Would you like to convert your diagram to the <camunda> namespace?',
-    detail: [
-      'This will allow you to maintain execution related properties.',
-      '',
-      '<camunda> namespace support works from Camunda BPM versions 7.4.0, 7.3.3, 7.2.6 onwards.'
-    ].join('\n')
-  };
-}
 
 function isCacheStateChanged(prevProps, props) {
   return prevProps.cachedState !== props.cachedState;
