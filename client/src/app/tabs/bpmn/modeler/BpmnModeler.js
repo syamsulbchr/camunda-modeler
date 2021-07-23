@@ -8,19 +8,33 @@
  * except in compliance with the MIT License.
  */
 
+import {
+  has
+} from 'min-dash';
+
 import BpmnModeler from 'camunda-bpmn-js/lib/camunda-platform/Modeler';
 
 import addExporterModule from '@bpmn-io/add-exporter';
+
+import {
+  BpmnPropertiesPanelModule,
+  BpmnPropertiesProviderModule,
+  DesignPropertiesProviderModule,
+  CamundaPlatformPropertiesProviderModule
+} from '@bpmn-io/bpmn-properties-panel';
 
 import completeDirectEditingModule from './features/complete-direct-editing';
 import globalClipboardModule from './features/global-clipboard';
 import handToolOnSpaceModule from './features/hand-tool-on-space';
 import propertiesPanelKeyboardBindingsModule from './features/properties-panel-keyboard-bindings';
 
+import toggleExecutionProperties from '../../cloud-bpmn/modeler/features/testing/ToggleExecutionProperties';
+
 import Flags, { DISABLE_ADJUST_ORIGIN } from '../../../../util/Flags';
 
 import 'camunda-bpmn-js/dist/assets/camunda-platform-modeler.css';
 
+import '@bpmn-io/bpmn-properties-panel/dist/assets/properties-panel.css';
 
 export default class PlatformBpmnModeler extends BpmnModeler {
 
@@ -49,9 +63,23 @@ const extensionModules = [
   globalClipboardModule,
   handToolOnSpaceModule,
   propertiesPanelKeyboardBindingsModule,
+  BpmnPropertiesPanelModule,
+  BpmnPropertiesProviderModule,
+  CamundaPlatformPropertiesProviderModule,
+  DesignPropertiesProviderModule,
+  toggleExecutionProperties
 ];
 
 PlatformBpmnModeler.prototype._modules = [
-  ...defaultModules,
+  ...excludeOldModules(defaultModules),
   ...extensionModules
 ];
+
+// helper /////////////////////
+
+/**
+ * Excludes old properties panel + provider coming from camunda-bpmn-js.
+ */
+function excludeOldModules(modules) {
+  return modules.filter(m => !has(m, 'propertiesPanel') && !has(m, 'propertiesProvider'));
+}

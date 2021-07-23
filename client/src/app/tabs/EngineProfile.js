@@ -127,9 +127,64 @@ function Description(props) {
     return (
       <Fragment>
         <Overlay.Body>
-          This diagram is supposed to be executed on <em>Camunda Platform</em>.
-          The properties panel provides the related implementation features.
-          This diagram can be deployed to and started in a connected <em>Camunda Platform</em> instance.
+          { executionEnabled ?
+            <div>
+              This diagram is supposed to be executed on <em>Camunda Platform</em>.
+              The properties panel provides the related implementation features.
+              This diagram can be deployed to and started in a connected <em>Camunda Platform</em> instance.
+            </div>
+            : (
+              <div>
+                <p style={ { marginTop: '0' } }>Select the execution platform</p>
+                <div className="form-group">
+                  <div>
+                    <div className="custom-control custom-radio">
+                      <input
+                        type="radio"
+                        name="cloud"
+                        value="cloud"
+                        disabled={ true }
+                        autoFocus={ false }
+                        onChange={ () => {} }
+                        className="custom-control-input"
+                        id="cloud" />
+                      <label
+                        htmlFor="cloud"
+                        className="custom-control-label">
+                        Camunda Cloud
+                        <br />
+                        (Zeebe Workflow Engine)
+                      </label>
+                    </div>
+                  </div>
+                  <div>
+                    <div className="custom-control custom-radio">
+                      <input
+                        type="radio"
+                        name="platform"
+                        value="platform"
+                        autoFocus={ false }
+                        onChange={ () => {} }
+                        className="custom-control-input"
+                        id="platform" />
+                      <label
+                        htmlFor="platform"
+                        className="custom-control-label">
+                        Camunda Platform
+                        <br />
+                        (Camunda Workflow Engine)
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  style={ { height: '30px', width: '100%', marginTop: '1rem' } }
+                  className="btn btn-primary"
+                  onClick={ onToggleExecution }>Apply</button>
+              </div>
+            )
+          }
+
         </Overlay.Body>
         <Overlay.Footer>
           <Link href="https://docs.camunda.org/manual/latest/">Learn more</Link>

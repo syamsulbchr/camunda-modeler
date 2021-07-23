@@ -353,12 +353,12 @@ export default class TabsProvider {
       form: [ this.providers.form ]
     };
 
-    if (Flags.get('disable-zeebe')) {
+    if (Flags.get('disable-zeebe', true)) {
       this.providersByFileType.bpmn = this.providersByFileType.bpmn.filter(p => p !== this.providers['cloud-bpmn']);
       delete this.providers['cloud-bpmn'];
     }
 
-    if (Flags.get('disable-platform', true)) {
+    if (Flags.get('disable-platform', false)) {
       this.providersByFileType.bpmn = this.providersByFileType.bpmn.filter(p => p !== this.providers['bpmn']);
       delete this.providers['bpmn'];
     }

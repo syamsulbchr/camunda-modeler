@@ -8,7 +8,9 @@
  * except in compliance with the MIT License.
  */
 
-const ZEEBE_PROVIDER_KEY = 'zeebe';
+const PLATFORM_PROVIDER_KEY = 'platform';
+
+// const ZEEBE_PROVIDER_KEY = 'zeebe';
 const DESIGN_PROVIDER_KEY = 'design';
 
 
@@ -20,7 +22,7 @@ function ToggleExecutionProperties(editorActions, eventBus) {
   // to remove a provider for now
   const disableZeebeProvider = (event) => {
     if (!this.isEnabled()) {
-      event.providers = event.providers.filter(p => p.key !== ZEEBE_PROVIDER_KEY);
+      event.providers = event.providers.filter(p => p.key !== PLATFORM_PROVIDER_KEY);
     } else {
       event.providers = event.providers.filter(p => p.key !== DESIGN_PROVIDER_KEY);
     }

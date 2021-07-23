@@ -38,13 +38,13 @@ export default class EmptyTab extends PureComponent {
         <div className="create-buttons">
           <p>Create a new file:</p>
           {
-            !Flags.get('disable-platform', true) && (
-              <button className="btn btn-secondary" onClick={ () => onAction('create-bpmn-diagram') }>BPMN diagram (Camunda Platform)</button>
+            !Flags.get('disable-platform') && (
+              <button className="btn btn-secondary" onClick={ () => onAction('create-bpmn-diagram') }>BPMN diagram</button>
             )
           }
 
           {
-            !Flags.get(DISABLE_ZEEBE) && (
+            !Flags.get(DISABLE_ZEEBE, true) && (
               <button className="btn btn-secondary" onClick={ () => onAction('create-cloud-bpmn-diagram') }>BPMN diagram</button>
             )
           }

@@ -50,7 +50,7 @@ import css from './BpmnEditor.less';
 
 import generateImage from '../../util/generateImage';
 
-import applyDefaultTemplates from './modeler/features/apply-default-templates/applyDefaultTemplates';
+// import applyDefaultTemplates from './modeler/features/apply-default-templates/applyDefaultTemplates';
 
 import {
   findUsages as findNamespaceUsages,
@@ -136,11 +136,11 @@ export class BpmnEditor extends CachedComponent {
     propertiesPanel.attachTo(this.propertiesPanelRef.current);
 
 
-    try {
-      await this.loadTemplates();
-    } catch (error) {
-      this.handleError({ error });
-    }
+    // try {
+    //   await this.loadTemplates();
+    // } catch (error) {
+    //   this.handleError({ error });
+    // }
 
     this.checkImport();
   }
@@ -322,11 +322,11 @@ export class BpmnEditor extends CachedComponent {
       });
     } else {
 
-      if (isNew && !defaultTemplatesApplied) {
-        modeler.invoke(applyDefaultTemplates);
+      // if (isNew && !defaultTemplatesApplied) {
+      //   modeler.invoke(applyDefaultTemplates);
 
-        defaultTemplatesApplied = true;
-      }
+      //   defaultTemplatesApplied = true;
+      // }
 
       this.setCached({
         defaultTemplatesApplied,
