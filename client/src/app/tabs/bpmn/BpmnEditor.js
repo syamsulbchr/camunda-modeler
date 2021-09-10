@@ -143,7 +143,8 @@ export class BpmnEditor extends CachedComponent {
 
 
     try {
-      await this.loadTemplates();
+
+      // await this.loadTemplates();
     } catch (error) {
       this.handleError({ error });
     }
@@ -193,7 +194,7 @@ export class BpmnEditor extends CachedComponent {
       modeler[fn](event, this.handleChanged);
     });
 
-    modeler[fn]('elementTemplates.errors', this.handleElementTemplateErrors);
+    // modeler[fn]('elementTemplates.errors', this.handleElementTemplateErrors);
 
     modeler[fn]('error', 1500, this.handleError);
 
@@ -328,11 +329,11 @@ export class BpmnEditor extends CachedComponent {
       });
     } else {
 
-      if (isNew && !defaultTemplatesApplied) {
-        modeler.invoke(applyDefaultTemplates);
+      // if (isNew && !defaultTemplatesApplied) {
+      //   modeler.invoke(applyDefaultTemplates);
 
-        defaultTemplatesApplied = true;
-      }
+      //   defaultTemplatesApplied = true;
+      // }
 
       this.setCached({
         defaultTemplatesApplied,
@@ -632,9 +633,9 @@ export class BpmnEditor extends CachedComponent {
       };
     }
 
-    if (action === 'elementTemplates.reload') {
-      return this.loadTemplates();
-    }
+    // if (action === 'elementTemplates.reload') {
+    //   return this.loadTemplates();
+    // }
 
     // TODO(nikku): handle all editor actions
     return modeler.get('editorActions').trigger(action, context);

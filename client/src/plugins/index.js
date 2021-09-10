@@ -9,7 +9,8 @@
  */
 
 import CamundaPlugin from './camunda-plugin';
-import ElementTemplatesModal from './element-templates-modal';
+
+// import ElementTemplatesModal from './element-templates-modal';
 import ErrorTracking from './error-tracking';
 import PrivacyPreferences from './privacy-preferences';
 import ReportFeedback from './report-feedback';
@@ -20,7 +21,8 @@ import ZeebePlugin from './zeebe-plugin';
 
 export default [
   CamundaPlugin,
-  ElementTemplatesModal,
+
+  // ElementTemplatesModal,
   ErrorTracking,
   PrivacyPreferences,
   ReportFeedback,
