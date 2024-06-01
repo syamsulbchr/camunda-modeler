@@ -1,0 +1,1089 @@
+repo_name: syamsulbchr/camunda-modeler
+report_id: 758f7ac2a8dc7a4c60ff5b45ff1d4f6a
+version: 0.1
+repo_type: Public
+timestamp: '2024-06-01T08:30:43+00:00'
+requested_by: philippfromme
+provider: github
+branch: develop
+detected_tools_count: 78
+tools:
+- name: CSS 3
+  description: The latest evolution of the Cascading Style Sheets language
+  website_url: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/6727/css.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler
+  detection_source: Repo Metadata
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler
+  detection_source: Repo Metadata
+- name: ".NET"
+  description: A free, cross-platform, open source developer platform for building
+    many different types of applications
+  website_url: http://www.microsoft.com/net/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  image_url: https://img.stackshare.io/service/1014/IoPy1dce_400x400.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/app/package.json
+  detection_source: app/package.json
+  last_updated_by: Nico Rehwaldt
+  last_updated_on: 2018-05-22 13:30:28.000000000 Z
+- name: Electron
+  description: Build cross platform desktop apps with JavaScript, HTML, and CSS
+  website_url: http://electron.atom.io/
+  version: 12.0.5
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Cross-Platform Desktop Development
+  image_url: https://img.stackshare.io/service/2946/default_18a71b65e69d7aef5f218ae07f64eb6e1594c444.jpg
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/package-lock.json
+  detection_source: package.json
+  last_updated_by: Maciej Barelkowski
+  last_updated_on: 2021-04-13 15:35:46.000000000 Z
+- name: Less
+  description: The dynamic stylesheet language
+  website_url: http://lesscss.org/
+  version: 3.9.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: CSS Pre-processors / Extensions
+  image_url: https://img.stackshare.io/service/1170/default_957cbc0168b4d37265e264469c888f776e57f42c.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: client/package.json
+  last_updated_by: Nico Rehwaldt
+  last_updated_on: 2017-10-11 21:31:57.000000000 Z
+- name: Node.js
+  description: A platform built on Chrome's JavaScript runtime for easily building
+    fast, scalable network applications
+  website_url: http://nodejs.org/
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  image_url: https://img.stackshare.io/service/1011/n1JRsFeB_400x400.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/app/package.json
+  detection_source: app/package.json
+  last_updated_by: Nico Rehwaldt
+  last_updated_on: 2018-05-22 13:30:28.000000000 Z
+- name: React
+  description: A JavaScript library for building user interfaces
+  website_url: https://reactjs.org/
+  version: 16.8.6
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript UI Libraries
+  image_url: https://img.stackshare.io/service/1020/OYIaJ1KK.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: client/package.json
+  last_updated_by: Nico Rehwaldt
+  last_updated_on: 2019-10-24 08:46:14.000000000 Z
+- name: css-loader
+  description: Helps webpack to collect CSS from all the css files
+  website_url: https://github.com/webpack-contrib/css-loader
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: CSS Pre-processors / Extensions
+  image_url: https://img.stackshare.io/service/8074/default_d2b16fd6997fb2e164de645a34f9b8d5a880d999.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package.json
+  detection_source: client/package.json
+  last_updated_by: Nico Rehwaldt
+  last_updated_on: 2019-10-24 08:46:14.000000000 Z
+- name: Babel
+  description: Use next generation JavaScript, today.
+  website_url: http://babeljs.io/
+  version: 7.4.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: JavaScript Compilers
+  image_url: https://img.stackshare.io/service/2739/-1wfGjNw.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: client/.babelrc
+  last_updated_by: Nico Rehwaldt
+  last_updated_on: 2021-01-11 19:36:46.000000000 Z
+- name: Chai
+  description: A BDD / TDD assertion library
+  website_url: http://chaijs.com/
+  version: 4.2.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Javascript Testing Framework
+  image_url: https://img.stackshare.io/service/1725/chai.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: client/package.json
+  last_updated_by: Nico Rehwaldt
+  last_updated_on: 2017-10-11 21:31:57.000000000 Z
+- name: CodeMirror
+  description: A versatile text editor implemented in JavaScript for the browser
+  website_url: http://codemirror.net/
+  version: 5.46.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Text Editor
+  image_url: https://img.stackshare.io/service/2490/E_fCaAi6.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: client/package.json
+  last_updated_by: Nico Rehwaldt
+  last_updated_on: 2019-04-26 09:22:58.000000000 Z
+- name: Codecov
+  description: Hosted coverage reports with awesome features to enhance your CI workflow
+  website_url: https://codecov.io/
+  open_source: false
+  hosted_saas: true
+  category: Build, Test, Deploy
+  sub_category: Code Coverage
+  image_url: https://img.stackshare.io/service/2673/Codecov_Mark_Circle_Pink.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/.codecov.yml
+  detection_source: ".codecov.yml"
+  last_updated_by: Nico Rehwaldt
+  last_updated_on: 2018-10-01 19:46:39.000000000 Z
+- name: ESLint
+  description: The fully pluggable JavaScript code quality tool
+  website_url: http://eslint.org/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Code Review
+  image_url: https://img.stackshare.io/service/3337/Q4L7Jncy.jpg
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/.eslintrc
+  detection_source: ".eslintrc"
+  last_updated_by: Nico Rehwaldt
+  last_updated_on: 2016-02-16 16:15:14.000000000 Z
+- name: Enzyme
+  description: JavaScript Testing utilities for React, by Airbnb
+  website_url: https://enzymejs.github.io/enzyme/
+  version: 3.9.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Javascript Testing Framework
+  image_url: https://img.stackshare.io/service/4488/default_87e6ca3fa146a959af95ccf3df1ec550eb434129.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: client/package.json
+  last_updated_by: Nico Rehwaldt
+  last_updated_on: 2019-04-26 09:20:08.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler
+  detection_source: Repo Metadata
+- name: GitHub Actions
+  description: Automate your workflow from idea to production
+  website_url: https://github.com/features/actions
+  open_source: false
+  hosted_saas: true
+  category: Build, Test, Deploy
+  sub_category: Continuous Integration
+  image_url: https://img.stackshare.io/service/11563/actions.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/.github/workflows/BUILD_ON_DEMAND.yml
+  detection_source: ".github/workflows/BUILD_ON_DEMAND.yml"
+  last_updated_by: Maciej Barelkowski
+  last_updated_on: 2021-02-26 12:10:54.000000000 Z
+- name: Karma
+  description: Spectacular Test Runner for JavaScript
+  website_url: http://karma-runner.github.io/
+  version: 4.1.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Browser Testing
+  image_url: https://img.stackshare.io/service/1420/TidYGd6a.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: client/package.json
+  last_updated_by: Philipp Fromme
+  last_updated_on: 2020-06-18 13:20:01.000000000 Z
+- name: Mocha
+  description: Simple, flexible, fun javascript test framework for node.js &amp; the
+    browser
+  website_url: http://mochajs.org/
+  version: 5.2.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Javascript Testing Framework
+  image_url: https://img.stackshare.io/service/832/mocha.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: client/package.json
+  last_updated_by: Nico Rehwaldt
+  last_updated_on: 2018-08-02 11:12:11.000000000 Z
+- name: NuGet
+  description: The package manager for .NET
+  website_url: https://www.nuget.org/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/service/2637/6I3oEOP4_400x400.jpg
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/app/package.json
+  detection_source: app/package.json
+  last_updated_by: Nico Rehwaldt
+  last_updated_on: 2018-05-22 13:30:28.000000000 Z
+- name: Puppeteer
+  description: Headless Chrome Node API
+  website_url: https://github.com/GoogleChrome/puppeteer
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Headless Browsers
+  image_url: https://img.stackshare.io/service/7553/puppeteer.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package.json
+  detection_source: client/package.json
+  last_updated_by: Nico Rehwaldt
+  last_updated_on: 2021-03-11 09:39:43.000000000 Z
+- name: Sentry
+  description: See performance issues, fix errors faster, and optimize code health.
+  website_url: https://sentry.io/welcome/?utm_source=stackshare&utm_medium=link&utm_campaign=profile
+  open_source: true
+  hosted_saas: true
+  category: Monitoring
+  sub_category: Exception Monitoring
+  image_url: https://img.stackshare.io/service/191/default_9262326592c97828a2a4299dec085a3674dd05f4.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/app/package.json
+  detection_source: app/package.json
+  last_updated_by: Philipp Fromme
+  last_updated_on: 2021-05-11 15:06:08.000000000 Z
+- name: SinonJS
+  description: Standalone test spies, stubs and mocks for JavaScript
+  website_url: http://sinonjs.org/
+  version: 7.3.2
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Javascript Testing Framework
+  image_url: https://img.stackshare.io/service/3509/logo.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: client/package.json
+  last_updated_by: Nico Rehwaldt
+  last_updated_on: 2019-04-26 09:22:58.000000000 Z
+- name: Webpack
+  description: A bundler for javascript and friends
+  website_url: http://webpack.js.org
+  version: 4.30.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: JS Build Tools / JS Task Runners
+  image_url: https://img.stackshare.io/service/1682/IMG_4636.PNG
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: client/package.json
+  last_updated_by: Maciej Barelkowski
+  last_updated_on: 2021-01-13 18:27:13.000000000 Z
+- name: npm
+  description: The package manager for JavaScript.
+  website_url: https://www.npmjs.com/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package.json
+  detection_source: client/package.json
+  last_updated_by: Nico Rehwaldt
+  last_updated_on: 2017-10-11 21:31:57.000000000 Z
+- name: Formik
+  description: Build forms in React
+  website_url: https://jaredpalmer.com/formik/
+  version: 2.0.4
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Application Utilities
+  sub_category: Web Forms
+  image_url: https://img.stackshare.io/service/8846/preview.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: client/package.json
+  last_updated_by: Nico Rehwaldt
+  last_updated_on: 2019-11-21 21:25:41.000000000 Z
+- name: Lerna
+  description: A tool for managing JavaScript projects
+  website_url: https://lerna.js.org/
+  version: 3.22.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript Utilities & Libraries
+  image_url: https://img.stackshare.io/service/6207/OwqAUSQi_400x400.jpg
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/package-lock.json
+  detection_source: package.json
+  last_updated_by: Maciej Barelkowski
+  last_updated_on: 2021-02-24 15:58:27.000000000 Z
+- name: Nodemailer
+  description: A module for Node.js applications to allow email sending
+  website_url: http://www.nodemailer.com/
+  open_source: true
+  hosted_saas: false
+  category: Communications
+  sub_category: Transactional Email
+  image_url: https://img.stackshare.io/service/2862/qr2-jCLr.jpg
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/package.json
+  detection_source: package.json
+  last_updated_by: Maciej Barelkowski
+  last_updated_on: 2019-03-11 15:50:37.000000000 Z
+- name: Shell
+  description: A shell is a text-based terminal, used for manipulating programs and
+    files. Shell scripts typically manage program execution.
+  website_url: https://en.wikipedia.org/wiki/Shell_script
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/4631/default_c2062d40130562bdc836c13dbca02d318205a962.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler
+  detection_source: Repo Metadata
+- name: node-fetch
+  description: A light-weight module that brings window.fetch to node.js
+  package_url: https://www.npmjs.com/node-fetch
+  version: 2.6.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15978/default_f49d4c116f8ea0155f4d92673b084378bba02760.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/app/package-lock.json
+  detection_source: app/package.json
+  last_updated_by: Maciej Barelkowski
+  last_updated_on: 2021-07-02 06:55:04.000000000 Z
+  vulnerabilities:
+  - name: node-fetch forwards secure headers to untrusted sites
+    cve_id: CVE-2022-0235
+    cve_url: https://github.com/advisories/GHSA-r683-j2x4-v87g
+    detected_date: Jan 22
+    severity: high
+    first_patched: 2.6.7
+- name: ua-parser-js
+  description: Lightweight JavaScript-based user-agent string parser
+  package_url: https://www.npmjs.com/ua-parser-js
+  version: 0.7.28
+  license: AGPL-3.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17510/default_e5adc22c59a44962e41dfaec51edeb42c083f2f4.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: client/package.json
+  last_updated_by: Max Tru
+  last_updated_on: 2021-08-20 11:49:02.000000000 Z
+  vulnerabilities:
+  - name: ReDoS Vulnerability in ua-parser-js version
+    cve_id: CVE-2022-25927
+    cve_url: https://github.com/advisories/GHSA-fhg7-m89q-25r3
+    detected_date: Jan 25
+    severity: high
+    first_patched: 0.7.33
+- name: "@babel/core"
+  description: Babel compiler core
+  package_url: https://www.npmjs.com/@babel/core
+  version: 7.4.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15810/default_004658cda9b38934f2871435e9dc15608c86e8be.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: client/package.json
+  last_updated_by: Nico Rehwaldt
+  last_updated_on: 2019-04-26 09:22:58.000000000 Z
+- name: "@babel/plugin-proposal-class-properties"
+  description: This plugin transforms static class properties as well as properties
+    declared with the property initializer syntax
+  package_url: https://www.npmjs.com/@babel/plugin-proposal-class-properties
+  version: 7.4.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15903/default_3af1504b6f77c55205ba630fe08c472f43b95f6e.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: client/package.json
+  last_updated_by: Niklas Kiefer
+  last_updated_on: 2021-08-24 10:01:38.000000000 Z
+- name: "@babel/plugin-syntax-dynamic-import"
+  description: Allow parsing of import
+  package_url: https://www.npmjs.com/@babel/plugin-syntax-dynamic-import
+  version: 7.2.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16080/default_5fd43aeff4d6a935abc13737de01a0355210499d.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: client/package.json
+  last_updated_by: Oguz
+  last_updated_on: 2020-05-11 05:12:50.000000000 Z
+- name: "@babel/preset-env"
+  description: A Babel preset for each environment
+  package_url: https://www.npmjs.com/@babel/preset-env
+  version: 7.4.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15819/default_98aa227f51aa9d787815ec3fd98d0ab2bfebbb91.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: client/package.json
+  last_updated_by: Maciej Barelkowski
+  last_updated_on: 2021-01-13 18:27:13.000000000 Z
+- name: "@babel/preset-react"
+  description: Babel preset for all React plugins
+  package_url: https://www.npmjs.com/@babel/preset-react
+  version: 7.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15890/default_6743ba96cf149a3c3c68a185199f9705d6eff80e.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: client/package.json
+  last_updated_by: Nico Rehwaldt
+  last_updated_on: 2019-10-24 08:46:14.000000000 Z
+- name: "@sentry/browser"
+  description: Official Sentry SDK for browsers
+  package_url: https://www.npmjs.com/@sentry/browser
+  version: 6.3.6
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/18385/default_3918a37cf2f76449e061a2c79fb02113faa1391a.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: client/package.json
+  last_updated_by: Philipp Fromme
+  last_updated_on: 2021-05-11 15:06:08.000000000 Z
+- name: "@sentry/node"
+  description: Offical Sentry SDK for Node.js
+  package_url: https://www.npmjs.com/@sentry/node
+  version: 6.3.6
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/18428/default_9499465ee49aaffadf126149b962e9838bc4a993.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/app/package-lock.json
+  detection_source: app/package.json
+  last_updated_by: Maciej Barelkowski
+  last_updated_on: 2021-07-02 06:55:04.000000000 Z
+- name: archiver
+  description: A streaming interface for archive generation
+  package_url: https://www.npmjs.com/archiver
+  version: 3.0.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16407/default_4cc3f31b8c64a6268fc123f0965a09d1b11180af.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/package-lock.json
+  detection_source: package.json
+  last_updated_by: Nico Rehwaldt
+  last_updated_on: 2019-07-22 11:18:32.000000000 Z
+- name: babel-loader
+  description: Babel module loader for webpack
+  package_url: https://www.npmjs.com/babel-loader
+  version: 8.0.5
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15800/default_4acafe585186b4157fa23322ae7ca89e24b5cdef.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: client/package.json
+  last_updated_by: Nico Rehwaldt
+  last_updated_on: 2019-10-24 08:46:14.000000000 Z
+- name: babel-plugin-istanbul
+  description: A babel plugin that adds istanbul instrumentation to ES6 code
+  package_url: https://www.npmjs.com/babel-plugin-istanbul
+  version: 5.1.3
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16032/default_5fd43aeff4d6a935abc13737de01a0355210499d.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: client/package.json
+  last_updated_by: Oguz
+  last_updated_on: 2020-05-11 05:12:50.000000000 Z
+- name: case-sensitive-paths-webpack-plugin
+  description: Enforces module path case sensitivity in Webpack
+  package_url: https://www.npmjs.com/case-sensitive-paths-webpack-plugin
+  version: 2.2.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16073/default_5fd43aeff4d6a935abc13737de01a0355210499d.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: client/package.json
+  last_updated_by: Maciej Barelkowski
+  last_updated_on: 2021-01-13 18:27:13.000000000 Z
+- name: classnames
+  description: A simple utility for conditionally joining classNames together
+  package_url: https://www.npmjs.com/classnames
+  version: 2.3.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15942/default_4040fefea2f98006727f63d042275b96a275ab2d.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: client/package.json
+  last_updated_by: Nico Rehwaldt
+  last_updated_on: 2019-04-26 09:22:58.000000000 Z
+- name: copy-webpack-plugin
+  description: Copy files &amp;&amp; directories with webpack
+  package_url: https://www.npmjs.com/copy-webpack-plugin
+  version: 4.6.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15941/default_b45165a5d30e541ab11711a34a78209b3e8ed7fd.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: client/package.json
+  last_updated_by: Maciej Barelkowski
+  last_updated_on: 2021-01-13 18:27:13.000000000 Z
+- name: cpx
+  description: Copy file globs, watching for changes
+  package_url: https://www.npmjs.com/cpx
+  version: 1.5.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16454/default_aa91da3cee4d961f0eea8ca5de77f399ec7ec794.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/package-lock.json
+  detection_source: package.json
+  last_updated_by: Nico Rehwaldt
+  last_updated_on: 2015-09-18 09:47:36.000000000 Z
+- name: cross-env
+  description: Run scripts that set and use environment variables across platforms
+  package_url: https://www.npmjs.com/cross-env
+  version: 5.2.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15828/default_14fd11531839d935f920b6d55bd6f3528c890ad7.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: client/package.json
+  last_updated_by: Maciej Barelkowski
+  last_updated_on: 2021-01-13 18:27:13.000000000 Z
+- name: debug
+  description: Small debugging utility
+  package_url: https://www.npmjs.com/debug
+  version: 4.3.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15852/default_a2f722724df977d0f7752839e5d8845ab41f69d5.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/app/package-lock.json
+  detection_source: client/package.json
+  last_updated_by: Nico Rehwaldt
+  last_updated_on: 2019-02-09 14:14:36.000000000 Z
+- name: del
+  description: Delete files and directories
+  package_url: https://www.npmjs.com/del
+  version: 3.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15907/default_a582b9fecca65f37fe68520c8f84d3bcae35db24.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: package.json
+  last_updated_by: Nico Rehwaldt
+  last_updated_on: 2015-09-18 09:47:36.000000000 Z
+- name: del-cli
+  description: Delete files and directories - Cross-platform
+  package_url: https://www.npmjs.com/del-cli
+  version: 1.1.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16349/default_22cf6cee54c697b5a223902962cc57a55ee80be9.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: client/package.json
+  last_updated_by: Maciej Barelkowski
+  last_updated_on: 2021-01-13 18:27:13.000000000 Z
+- name: electron-builder
+  description: A complete solution to package and build a ready for distribution Electron
+    app for MacOS
+  package_url: https://www.npmjs.com/electron-builder
+  version: 22.10.5
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17567/default_cce6af1cc5c037d170650dfd256f479915d5a8e4.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/package-lock.json
+  detection_source: package.json
+  last_updated_by: Maciej Barelkowski
+  last_updated_on: 2021-04-13 15:35:46.000000000 Z
+- name: enzyme-adapter-react-16
+  description: JavaScript Testing utilities for React
+  package_url: https://www.npmjs.com/enzyme-adapter-react-16
+  version: 1.12.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15959/default_f8be85789693a9901dbcfa43c135c60525ae49a1.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: client/package.json
+  last_updated_by: Niklas Kiefer
+  last_updated_on: 2021-04-08 07:33:41.000000000 Z
+- name: eslint-plugin-import
+  description: Import with sanity
+  package_url: https://www.npmjs.com/eslint-plugin-import
+  version: 2.22.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15806/default_98aa227f51aa9d787815ec3fd98d0ab2bfebbb91.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/package-lock.json
+  detection_source: package.json
+  last_updated_by: Nico Rehwaldt
+  last_updated_on: 2021-07-30 09:23:08.000000000 Z
+- name: events
+  description: Node's event emitter for all engines
+  package_url: https://www.npmjs.com/events
+  version: 3.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16435/default_aa91da3cee4d961f0eea8ca5de77f399ec7ec794.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: client/package.json
+  last_updated_by: Maciej Barelkowski
+  last_updated_on: 2019-08-21 16:35:36.000000000 Z
+- name: execa
+  description: Process execution for humans
+  package_url: https://www.npmjs.com/execa
+  version: 0.7.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16132/default_3d197518f6bb529bfcc1b685e2cefbdfe83ff108.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: package.json
+  last_updated_by: Nico Rehwaldt
+  last_updated_on: 2019-01-07 12:52:11.000000000 Z
+- name: file-loader
+  description: A file loader module for webpack
+  package_url: https://www.npmjs.com/file-loader
+  version: 3.0.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15834/default_4479dbac220be99e50e724b2df6cf415241d71fd.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: client/package.json
+  last_updated_by: Nico Rehwaldt
+  last_updated_on: 2019-10-24 08:46:14.000000000 Z
+- name: form-data
+  description: A library to create readable "multipart/form-data" streams
+  package_url: https://www.npmjs.com/form-data
+  version: 2.5.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16415/default_aa91da3cee4d961f0eea8ca5de77f399ec7ec794.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/app/package-lock.json
+  detection_source: app/package.json
+  last_updated_by: Nico Rehwaldt
+  last_updated_on: 2021-01-15 11:43:41.000000000 Z
+- name: glob
+  description: A little globber
+  package_url: https://www.npmjs.com/glob
+  version: 7.1.6
+  license: ISC
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15875/default_7c39a83d4acd952df89b1ebfdb94c8646324fbf1.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/app/package-lock.json
+  detection_source: app/package.json
+  last_updated_by: Nico Rehwaldt
+  last_updated_on: 2021-01-15 11:43:41.000000000 Z
+- name: karma-chrome-launcher
+  description: A Karma plugin. Launcher for Chrome and Chrome Canary
+  package_url: https://www.npmjs.com/karma-chrome-launcher
+  version: 2.2.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15860/default_6743ba96cf149a3c3c68a185199f9705d6eff80e.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: client/package.json
+  last_updated_by: Philipp Fromme
+  last_updated_on: 2020-06-18 13:20:01.000000000 Z
+- name: karma-coverage
+  description: A Karma plugin. Generate code coverage
+  package_url: https://www.npmjs.com/karma-coverage
+  version: 1.1.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15951/default_b45165a5d30e541ab11711a34a78209b3e8ed7fd.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: client/package.json
+  last_updated_by: Philipp Fromme
+  last_updated_on: 2020-06-18 13:20:01.000000000 Z
+- name: karma-mocha
+  description: A Karma plugin. Adapter for Mocha testing framework
+  package_url: https://www.npmjs.com/karma-mocha
+  version: 1.3.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15962/default_732016a20524708efe7a4c77497fe9bfeea19ba6.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: client/package.json
+  last_updated_by: Philipp Fromme
+  last_updated_on: 2020-06-18 13:20:01.000000000 Z
+- name: karma-sinon-chai
+  description: Sinon and Chai for Karma
+  package_url: https://www.npmjs.com/karma-sinon-chai
+  version: 2.0.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16254/default_dc80ff0a17bac19253430a4f0f586714841116db.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: client/package.json
+  last_updated_by: Philipp Fromme
+  last_updated_on: 2020-06-18 13:20:01.000000000 Z
+- name: karma-spec-reporter
+  description: A Karma plugin
+  package_url: https://www.npmjs.com/karma-spec-reporter
+  version: 0.0.32
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16130/default_63a34654baee757196ddff2457bd1c9a0dfb7287.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: client/package.json
+  last_updated_by: Philipp Fromme
+  last_updated_on: 2020-06-18 13:20:01.000000000 Z
+- name: karma-webpack
+  description: Use webpack with karma
+  package_url: https://www.npmjs.com/karma-webpack
+  version: 4.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15955/default_f49d4c116f8ea0155f4d92673b084378bba02760.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: client/package.json
+  last_updated_by: Maciej Barelkowski
+  last_updated_on: 2021-01-13 18:27:13.000000000 Z
+- name: less-loader
+  description: A Less loader for webpack. Compiles Less to CSS
+  package_url: https://www.npmjs.com/less-loader
+  version: 4.1.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15989/default_8b5680d4e916298d08363c291a0d6e34c07ceb15.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: client/package.json
+  last_updated_by: Niklas Kiefer
+  last_updated_on: 2021-04-08 07:33:41.000000000 Z
+- name: license-checker
+  description: Check license info for a package
+  package_url: https://www.npmjs.com/license-checker
+  version: 25.0.1
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17999/default_fc5f66cf44024e173fd07c415d4f30ca58b4cbad.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/package-lock.json
+  detection_source: package.json
+  last_updated_by: Nico Rehwaldt
+  last_updated_on: 2021-07-30 09:21:58.000000000 Z
+- name: npm-run-all
+  description: A CLI tool to run multiple npm-scripts in parallel or sequential
+  package_url: https://www.npmjs.com/npm-run-all
+  version: 4.1.5
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15926/default_b45165a5d30e541ab11711a34a78209b3e8ed7fd.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: client/package.json
+  last_updated_by: Maciej Barelkowski
+  last_updated_on: 2018-11-27 08:53:39.000000000 Z
+- name: nyc
+  description: The Istanbul command line interface
+  package_url: https://www.npmjs.com/nyc
+  version: 15.1.0
+  license: ISC
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15837/default_1d65e37e65b7f80761374f0202776043277d505d.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/package-lock.json
+  detection_source: package.json
+  last_updated_by: Nico Rehwaldt
+  last_updated_on: 2015-09-18 09:47:36.000000000 Z
+- name: proxyquire
+  description: Proxies nodejs require in order to allow overriding dependencies during
+    testing
+  package_url: https://www.npmjs.com/proxyquire
+  version: 2.1.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16138/default_63a34654baee757196ddff2457bd1c9a0dfb7287.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/package-lock.json
+  detection_source: package.json
+  last_updated_by: Nico Rehwaldt
+  last_updated_on: 2021-01-15 11:36:23.000000000 Z
+- name: raw-loader
+  description: A loader for webpack that allows importing files as a String
+  package_url: https://www.npmjs.com/raw-loader
+  version: 1.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16030/default_7a465bc85b23fd837cbc038fd1d504632c41a884.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: client/package.json
+  last_updated_by: Nico Rehwaldt
+  last_updated_on: 2019-10-24 08:46:14.000000000 Z
+- name: react-dom
+  description: React package for working with the DOM
+  package_url: https://www.npmjs.com/react-dom
+  version: 16.8.6
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15808/default_14fd11531839d935f920b6d55bd6f3528c890ad7.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: client/package.json
+  last_updated_by: Niklas Kiefer
+  last_updated_on: 2021-04-08 07:33:41.000000000 Z
+- name: react-svg-loader
+  description: Optimize svg and load it as a React Component
+  package_url: https://www.npmjs.com/react-svg-loader
+  version: 3.0.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/18623/default_6aa055317c2b28723235bf769cdc93c28d788d16.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: client/package.json
+  last_updated_by: Niklas Kiefer
+  last_updated_on: 2021-04-08 07:33:41.000000000 Z
+- name: react-test-renderer
+  description: React package for snapshot testing
+  package_url: https://www.npmjs.com/react-test-renderer
+  version: 16.8.6
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15929/default_ac622bc364a601d766b9a6f6039f191492f54d65.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: client/package.json
+  last_updated_by: Niklas Kiefer
+  last_updated_on: 2021-04-08 07:33:41.000000000 Z
+- name: sinon-chai
+  description: Extends Chai with assertions for the Sinon.JS mocking framework
+  package_url: https://www.npmjs.com/sinon-chai
+  version: 3.3.0
+  license: BSD-2-Clause,WTFPL
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15914/default_1d65e37e65b7f80761374f0202776043277d505d.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: client/package.json
+  last_updated_by: Nico Rehwaldt
+  last_updated_on: 2019-04-26 09:22:58.000000000 Z
+- name: style-loader
+  description: Style loader module for webpack
+  package_url: https://www.npmjs.com/style-loader
+  version: 0.23.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15822/default_004658cda9b38934f2871435e9dc15608c86e8be.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: client/package.json
+  last_updated_by: Nico Rehwaldt
+  last_updated_on: 2019-10-24 08:46:14.000000000 Z
+- name: tar-stream
+  description: Tar-stream is a streaming tar parser and generator and nothing else
+  package_url: https://www.npmjs.com/tar-stream
+  version: 2.2.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/18168/default_77d2e8738857baa38b19bd635d4e8653809e03e4.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: package.json
+  last_updated_by: Oguz
+  last_updated_on: 2020-02-12 14:06:25.000000000 Z
+- name: url-loader
+  description: A loader for webpack which transforms files into base64 URIs
+  package_url: https://www.npmjs.com/url-loader
+  version: 1.1.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15858/default_a2f722724df977d0f7752839e5d8845ab41f69d5.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: client/package.json
+  last_updated_by: Nico Rehwaldt
+  last_updated_on: 2019-10-24 08:46:14.000000000 Z
+- name: webpack-cli
+  description: CLI for webpack &amp; friends
+  package_url: https://www.npmjs.com/webpack-cli
+  version: 3.3.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15826/default_14fd11531839d935f920b6d55bd6f3528c890ad7.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: client/package.json
+  last_updated_by: Maciej Barelkowski
+  last_updated_on: 2021-01-13 18:27:13.000000000 Z
+- name: which
+  description: Like which
+  package_url: https://www.npmjs.com/which
+  version: 1.3.1
+  license: ISC
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16482/default_482cf308e8fc087eee8e154f29cc142c834abc51.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: package.json
+  last_updated_by: Oguz
+  last_updated_on: 2020-02-12 14:06:25.000000000 Z
+- name: yauzl
+  description: Yet another unzip library for node
+  package_url: https://www.npmjs.com/yauzl
+  version: 2.10.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/18448/default_31e3dc8ee5066945286d4e7345d470ac3863ee5a.png
+  detection_source_url: https://github.com/syamsulbchr/camunda-modeler/blob/develop/client/package-lock.json
+  detection_source: package.json
+  last_updated_by: Oguz
+  last_updated_on: 2020-02-12 14:06:25.000000000 Z
